@@ -55,7 +55,7 @@
 						<v-btn
 							:disabled="isButtonDisabled"
 							outlined
-							@click="registerUser()">
+							@click="registerUser">
 							OK
 						</v-btn>
 					</v-card-actions>
@@ -77,12 +77,8 @@ export default {
 	name: "RegistrationView",
 	components: {},
 	watch: {
-		valid: function (newVal, oldVal) {
-			if (newVal != true) {
-				this.isButtonDisabled = true;
-			} else {
-				this.isButtonDisabled = false;
-			}
+		valid: function (isValid) {
+			this.isButtonDisabled = isValid != true;
 		},
 	},
 	data() {
