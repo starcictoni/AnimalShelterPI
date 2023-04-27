@@ -20,6 +20,7 @@
 			</div>
 			<v-spacer></v-spacer>
 			<v-btn text to="/">Landing</v-btn>
+			<v-btn v-show="isAuthenticated" text to="/animal">New Animal</v-btn>
 			<v-btn v-show="false && isAuthenticated" text to="/profile">
 				Profile
 			</v-btn>
@@ -28,6 +29,7 @@
 				Registration
 			</v-btn>
 			<v-btn v-show="isAuthenticated" @click="signOut" text>Logout</v-btn>
+
 			<v-spacer></v-spacer>
 		</v-app-bar>
 

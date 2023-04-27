@@ -40,8 +40,15 @@ export { app, auth, storage,
   doc,
   getDoc,
 	setDoc,
+  addDoc,
 	createUserWithEmailAndPassword,
   signInWithEmailAndPassword,
   sendPasswordResetEmail,
-  onAuthStateChanged
+  onAuthStateChanged,
+  ref,
+  uploadBytes,
+  getDownloadURL,
+  signOut,
+  updatePassword
+
 }

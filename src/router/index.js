@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import LoginView from '../views/LoginView.vue'
 import RegisterView from '../views/RegisterView.vue'
 import ProfileView from '../views/ProfileView.vue'
+import NewAnimalView from '../views/NewAnimalView.vue'
 
 Vue.use(VueRouter)
 
@@ -21,6 +22,11 @@ const routes = [
     path: '/profile',
     name: 'profile-view',
     component: ProfileView
+  },
+  {
+    path: '/animal',
+    name: 'new-animal-view',
+    component: NewAnimalView
   },
 ]
 
